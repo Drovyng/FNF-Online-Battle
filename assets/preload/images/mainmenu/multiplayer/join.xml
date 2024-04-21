@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_multiplayer.png">
+
+	<SubTexture name="join basic0000" x="0" y="0" width="214" height="124" frameX="0" frameY="0" frameWidth="214" frameHeight="124"/>
+	<SubTexture name="join basic0001" x="0" y="0" width="214" height="124" frameX="0" frameY="0" frameWidth="214" frameHeight="124"/>
+	<SubTexture name="join basic0002" x="0" y="0" width="214" height="124" frameX="0" frameY="0" frameWidth="214" frameHeight="124"/>
+	
+	<SubTexture name="join basic0003" x="214" y="0" width="214" height="124" frameX="0" frameY="0" frameWidth="214" frameHeight="124"/>
+	<SubTexture name="join basic0004" x="214" y="0" width="214" height="124" frameX="0" frameY="0" frameWidth="214" frameHeight="124"/>
+	<SubTexture name="join basic0005" x="214" y="0" width="214" height="124" frameX="0" frameY="0" frameWidth="214" frameHeight="124"/>
+	
+	
+	<SubTexture name="join white0000" x="0" y="124" width="256" height="145" frameX="0" frameY="0" frameWidth="256" frameHeight="145"/>
+	<SubTexture name="join white0001" x="0" y="124" width="256" height="145" frameX="0" frameY="0" frameWidth="256" frameHeight="145"/>
+	<SubTexture name="join white0002" x="0" y="124" width="256" height="145" frameX="0" frameY="0" frameWidth="256" frameHeight="145"/>
+	
+	<SubTexture name="join white0003" x="256" y="124" width="256" height="145" frameX="0" frameY="0" frameWidth="256" frameHeight="145"/>
+	<SubTexture name="join white0004" x="256" y="124" width="256" height="145" frameX="0" frameY="0" frameWidth="256" frameHeight="145"/>
+	<SubTexture name="join white0005" x="256" y="124" width="256" height="145" frameX="0" frameY="0" frameWidth="256" frameHeight="145"/>
+</TextureAtlas>

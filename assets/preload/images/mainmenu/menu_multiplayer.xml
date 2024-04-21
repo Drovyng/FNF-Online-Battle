@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_multiplayer.png">
+
+	<SubTexture name="multiplayer basic0000" x="0" y="0" width="596" height="175" frameX="-12" frameY="0" frameWidth="596" frameHeight="175"/>
+	<SubTexture name="multiplayer basic0001" x="0" y="0" width="596" height="175" frameX="-12" frameY="0" frameWidth="596" frameHeight="175"/>
+	<SubTexture name="multiplayer basic0002" x="0" y="0" width="596" height="175" frameX="-12" frameY="0" frameWidth="596" frameHeight="175"/>
+	
+	<SubTexture name="multiplayer basic0003" x="596" y="0" width="596" height="175" frameX="-12" frameY="0" frameWidth="596" frameHeight="175"/>
+	<SubTexture name="multiplayer basic0004" x="596" y="0" width="596" height="175" frameX="-12" frameY="0" frameWidth="596" frameHeight="175"/>
+	<SubTexture name="multiplayer basic0005" x="596" y="0" width="596" height="175" frameX="-12" frameY="0" frameWidth="596" frameHeight="175"/>
+	
+	
+	<SubTexture name="multiplayer white0000" x="0" y="175" width="742" height="215" frameX="-12" frameY="0" frameWidth="742" frameHeight="215"/>
+	<SubTexture name="multiplayer white0001" x="0" y="175" width="742" height="215" frameX="-12" frameY="0" frameWidth="742" frameHeight="215"/>
+	<SubTexture name="multiplayer white0002" x="0" y="175" width="742" height="215" frameX="-12" frameY="0" frameWidth="742" frameHeight="215"/>
+	
+	<SubTexture name="multiplayer white0003" x="742" y="175" width="742" height="215" frameX="-12" frameY="0" frameWidth="742" frameHeight="215"/>
+	<SubTexture name="multiplayer white0004" x="742" y="175" width="742" height="215" frameX="-12" frameY="0" frameWidth="742" frameHeight="215"/>
+	<SubTexture name="multiplayer white0005" x="742" y="175" width="742" height="215" frameX="-12" frameY="0" frameWidth="742" frameHeight="215"/>
+</TextureAtlas>

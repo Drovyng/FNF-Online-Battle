@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="host.png">
+
+	<SubTexture name="host basic0000" x="0" y="0" width="228" height="128" frameX="0" frameY="0" frameWidth="228" frameHeight="128"/>
+	<SubTexture name="host basic0001" x="0" y="0" width="228" height="128" frameX="0" frameY="0" frameWidth="228" frameHeight="128"/>
+	<SubTexture name="host basic0002" x="0" y="0" width="228" height="128" frameX="0" frameY="0" frameWidth="228" frameHeight="128"/>
+	
+	<SubTexture name="host basic0003" x="228" y="0" width="228" height="128" frameX="0" frameY="0" frameWidth="228" frameHeight="128"/>
+	<SubTexture name="host basic0004" x="228" y="0" width="228" height="128" frameX="0" frameY="0" frameWidth="228" frameHeight="128"/>
+	<SubTexture name="host basic0005" x="228" y="0" width="228" height="128" frameX="0" frameY="0" frameWidth="228" frameHeight="128"/>
+	
+	
+	<SubTexture name="host white0000" x="0" y="128" width="312" height="174" frameX="0" frameY="0" frameWidth="312" frameHeight="174"/>
+	<SubTexture name="host white0001" x="0" y="128" width="312" height="174" frameX="0" frameY="0" frameWidth="312" frameHeight="174"/>
+	<SubTexture name="host white0002" x="0" y="128" width="312" height="174" frameX="0" frameY="0" frameWidth="312" frameHeight="174"/>
+	
+	<SubTexture name="host white0003" x="312" y="128" width="312" height="174" frameX="0" frameY="0" frameWidth="312" frameHeight="174"/>
+	<SubTexture name="host white0004" x="312" y="128" width="312" height="174" frameX="0" frameY="0" frameWidth="312" frameHeight="174"/>
+	<SubTexture name="host white0005" x="312" y="128" width="312" height="174" frameX="0" frameY="0" frameWidth="312" frameHeight="174"/>
+</TextureAtlas>
