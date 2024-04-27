@@ -21,15 +21,17 @@ function onOnlineMessage(id, data)
 		attack()
 	elseif id == "sans_blaster" then
 		blaster(data, false)
-	elseif id == "bf_heart" then
-		heartX = data[1]
-		heartY = data[2]
+	elseif id == "bf_heartX" then
+		heartX = data
+	elseif id == "bf_heartY" then
+		heartY = data
 	end
 end
 
 function onOnlineUpdate()
 	if isPlayer then
-		sendOnline("bf_heart", {heartX, heartY})
+		sendOnline("bf_heartX", heartX)
+		sendOnline("bf_heartY", heartY)
 	end
 end
 

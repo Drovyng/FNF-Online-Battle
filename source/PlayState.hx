@@ -3092,7 +3092,7 @@ class PlayState extends MusicBeatState
 		FlxG.watch.addQuick("stepShit", curStep);
 
 		// RESET = Quick Game Over Screen
-		if (!ClientPrefs.noReset && controls.RESET && canReset && !inCutscene && startedCountdown && !endingSong)
+		if (!ClientPrefs.noReset && controls.RESET && canReset && !inCutscene && startedCountdown && !endingSong && !Conductor.ISONLINE)
 		{
 			health = 0;
 			trace("RESET = True");
@@ -4561,12 +4561,12 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	public function changeHealth(value:Float, lethal:Bool, local:Bool = true){
+	public function changeHealth(value:Float, lethal:Bool, local:Bool = false){
 		if (!Conductor.ISPLAYER && local){
 			value = -value;
 		}
 		if (!lethal && Conductor.ISONLINE){
-			if ((health > 0.5 || value < 0) && (health < 1.5) && value > 0){
+			if ((health > 0.5 || value > 0) && (health < 1.5 || value < 0)){
 				health += value;
 				health = Math.max(health, 0.5);
 				health = Math.min(health, 1.5);

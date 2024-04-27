@@ -55,6 +55,7 @@ class OnlineUtil {
 
     public static function StartThread(server:Bool, ip:String, ?port:Int = 8097)
     {
+        Stop();
         Conductor.ISONLINE = true;
         ISHOST = server;
 
