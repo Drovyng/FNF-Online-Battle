@@ -1,5 +1,6 @@
 package;
 
+import openfl.filters.ShaderFilter;
 import OnlineUtil.OnlineUtilDataIDs;
 import flixel.graphics.FlxGraphic;
 #if desktop
@@ -566,7 +567,7 @@ class PlayState extends MusicBeatState
 			case 'limo': //Week 4
 				var skyBG:BGSprite = new BGSprite('limo/limoSunset', -120, -50, 0.1, 0.1);
 				add(skyBG);
-
+				
 				if(!ClientPrefs.lowQuality) {
 					limoMetalPole = new BGSprite('gore/metalPole', -500, 220, 0.4, 0.4);
 					add(limoMetalPole);
@@ -910,7 +911,7 @@ class PlayState extends MusicBeatState
 				default:
 					gfVersion = 'gf';
 			}
-
+			
 			switch(Paths.formatToSongPath(Conductor.SONG.song))
 			{
 				case 'stress':
@@ -1483,7 +1484,7 @@ class PlayState extends MusicBeatState
 			doPush = true;
 		}
 		#end
-
+		
 		if(doPush)
 		{
 			for (script in luaArray)
@@ -1494,7 +1495,6 @@ class PlayState extends MusicBeatState
 		}
 		#end
 	}
-
 	public function getLuaObject(tag:String, text:Bool=true):FlxSprite {
 		if(modchartSprites.exists(tag)) return modchartSprites.get(tag);
 		if(text && modchartTexts.exists(tag)) return modchartTexts.get(tag);
@@ -4505,12 +4505,14 @@ class PlayState extends MusicBeatState
 
 	public function playerNoteHit(noteID:Int, called:Bool = false)
 	{
+		/*
 		if (OnlineUtil.ISHOST && called){
 			trace("Player Hit Note - " + noteID);
 		}
+		*/
 		if (!unspawnNotesIDs.exists(noteID))
 		{
-			trace("Player Hit Data - Unknown");
+			//trace("Player Hit Data - Unknown");
 			return;
 		}
 
@@ -4563,9 +4565,9 @@ class PlayState extends MusicBeatState
 		if (!Conductor.ISPLAYER && local){
 			value = -value;
 		}
-		if (health > 0.5 && health < 1.5){
-			health += value;
-			if (!lethal){
+		if (!lethal && Conductor.ISONLINE){
+			if ((health > 0.5 || value < 0) && (health < 1.5) && value > 0){
+				health += value;
 				health = Math.max(health, 0.5);
 				health = Math.min(health, 1.5);
 			}
@@ -4616,6 +4618,8 @@ class PlayState extends MusicBeatState
 
 			if (Conductor.SONG.needsVoices)
 				vocals.volume = 1;
+
+			
 
 			var time:Float = 0.15;
 			if(note.isSustainNote && !note.animation.curAnim.name.endsWith('end')) {

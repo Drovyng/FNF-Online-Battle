@@ -20,6 +20,7 @@ abstract OnlineUtilDataIDs(String) {
     var SongLoaded;
     var PlayData;
     var LuaCustom;
+    var ChatMessage;
 }
 
 class OnlineUtil {
@@ -93,7 +94,7 @@ class OnlineUtil {
     public static function HandleMsg(msg:Map<String, Dynamic>)
     {
         var id:OnlineUtilDataIDs = msg["id"];
-
+        
         switch (id){
             case Initial:
                 AddData([

@@ -1,0 +1,202 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"indices": [28, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"name": "Sans FNF instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"indices": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+			"name": "Sans FNF instance 1"
+		},
+		{
+			"offsets": [
+				-16, 
+				28
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up instance 1"
+		},
+		{
+			"offsets": [
+				-19, 
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right instance 1"
+		},
+		{
+			"offsets": [
+				-13, 
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down instance 1"
+		},
+		{
+			"offsets": [
+				47, 
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left instance 1"
+		},
+		
+		
+		
+		{
+			"offsets": [
+				-14,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "Sans FNF Tired instance 1"
+		},
+		{
+			"offsets": [
+				-14,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft-alt",
+			"indices": [],
+			"name": "Sans FNF Tired instance 1"
+		},
+		{
+			"offsets": [
+				-14,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight-alt",
+			"indices": [],
+			"name": "Sans FNF Tired instance 1"
+		},
+		{
+			"offsets": [
+				20, 
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "snap",
+			"indices": [],
+			"name": "Snap to UT mode instance 1"
+		},
+		{
+			"offsets": [
+				48, 
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "Left Tired instance 1"
+		},
+		{
+			"offsets": [
+				-18, 
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "Right Tired instance 1"
+		},
+		{
+			"offsets": [
+				37, 
+				30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "Up Tired instance 1"
+		},
+		{
+			"offsets": [
+				-13, 
+				-14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "Down Tired instance 1"
+		},
+		{
+			"offsets": [
+				100, 
+				22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "miss",
+			"indices": [],
+			"name": "SansDodge instance 1"
+		},
+		{
+			"offsets": [
+				76, 
+				35
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "miss-alt",
+			"indices": [],
+			"name": "SansDodgeTired instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Sans_Phase_3",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "sans",
+	"flip_x": false,
+	"healthbar_colors": [
+		200,
+		200,
+		200
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

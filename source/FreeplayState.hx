@@ -1,5 +1,8 @@
 package;
 
+import flixel.addons.ui.FlxUIButton;
+import flixel.ui.FlxButton;
+import flixel.addons.ui.FlxUIInputText;
 import flixel.tweens.FlxEase;
 import OnlineUtil.OnlineUtilDataIDs;
 #if desktop
@@ -176,40 +179,6 @@ class FreeplayState extends MusicBeatState
 		changeSelection();
 		changeDiff();
 
-
-		var textBG:FlxSprite = new FlxSprite(0, FlxG.height - 26).makeGraphic(FlxG.width, 26, 0xFF000000);
-		textBG.alpha = 0.6;
-		add(textBG);
-
-		var leTextOnline = Conductor.ISONLINE ? "Press CTRL to change player/opponent" : "Press CTRL to open the Gameplay Changers Menu";
-
-		#if PRELOAD_ALL
-		var leText:String = "Press SPACE to listen to the Song / " + leTextOnline + " / Press RESET to Reset your Score and Accuracy.";
-		var size:Int = 16;
-		#else
-		var leText:String = leTextOnline + " / Press RESET to Reset your Score and Accuracy.";
-		var size:Int = 18;
-		#end
-		var text:FlxText = new FlxText(textBG.x, textBG.y + 4, FlxG.width, leText, size);
-		text.setFormat(Paths.font("vcr.ttf"), size, FlxColor.WHITE, RIGHT);
-		text.scrollFactor.set();
-		add(text);
-
-		onlinePlayerBG = new FlxSprite(0, textBG.y - 72).makeGraphic(256, 72, 0xFF000000);
-		onlinePlayerBG.alpha = 0.6;
-
-		onlinePlayerBG.visible = Conductor.ISONLINE && OnlineUtil.ISHOST;
-		add(onlinePlayerBG);
-
-		onlinePlayer = new FlxText(10, onlinePlayerBG.y + 30, 0, "", 32);
-		onlinePlayer.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, LEFT);
-		onlinePlayer.text = "Is Player:\nTrue";
-		onlinePlayerBG.width = onlinePlayer.width + 20;
-		onlinePlayerBG.height = 72;
-
-		onlinePlayer.visible = Conductor.ISONLINE && OnlineUtil.ISHOST;
-		add(onlinePlayer);
-
 		leftSelector = new Alphabet(0, 0, ">>>>>>>>>>>>", true);
 		rightSelector = new Alphabet(0, 0, "<<<<<<<<<<<<", true);
 
@@ -223,9 +192,68 @@ class FreeplayState extends MusicBeatState
 		add(rightSelector);
 
 		super.create();
+
+		if (Conductor.ISONLINE){
+			onlinePlayerBG = new FlxSprite(0, serverInfoBG.height).makeGraphic(256, 72, 0xFF000000);
+			onlinePlayerBG.alpha = 0.6;
+
+			onlinePlayerBG.visible = Conductor.ISONLINE && OnlineUtil.ISHOST;
+			add(onlinePlayerBG);
+
+			onlinePlayer = new FlxText(10, onlinePlayerBG.y + 30, 0, "", 32);
+			onlinePlayer.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, LEFT);
+			onlinePlayer.text = "Is Player:\nTrue";
+			onlinePlayerBG.width = onlinePlayer.width + 20;
+			onlinePlayerBG.height = 72;
+
+			onlinePlayer.visible = Conductor.ISONLINE && OnlineUtil.ISHOST;
+			add(onlinePlayer);
+
+
+			chatBG = new FlxSprite(FlxG.width - 350, FlxG.height - 326).makeGraphic(350, 400, FlxColor.BLACK);
+			chatBG.alpha = 0.15;
+			chatText = new FlxText(FlxG.width - 345, FlxG.height - 50, 340, "", 18);
+			chatText.alpha = 0.25;
+
+			chatInput = new FlxUIInputText(FlxG.width - 350, FlxG.height - 50, 300, "", 18, FlxColor.WHITE, FlxColor.BLACK, true);
+			
+			chatInput.alpha = 0.5;
+
+			chatButton = new FlxUIButton(FlxG.width - 50, FlxG.height - 50, "Send", () -> {
+				if (chatInput.text.length > 0 && chatInput.text != chatInputFiller){
+					chatText.text += "<You> " + chatInput.text + "\n";
+					OnlineUtil.AddData([
+						"id" => OnlineUtilDataIDs.ChatMessage,
+						"text" => "<Opponent> " + chatInput.text + "\n"
+					]);
+					chatText.text = "";
+				}
+			}, true, false, FlxColor.BLACK);
+
+			chatButton.label.color = FlxColor.WHITE;
+			chatButton.label.size = 18;
+			chatButton.setSize(50, 26);
+			chatButton.alpha = 0.5;
+			chatAlpha = 0;
+		}
 	}
+
+	override function handleMsg(msg:Map<String, Dynamic>) {
+		super.handleMsg(msg);
+		if (msg["id"] == OnlineUtilDataIDs.ChatMessage){
+			chatText.text += msg["text"];
+			chatAlpha = 1;
+		}
+	}
+
 	var leftSelector:Alphabet;
 	var rightSelector:Alphabet;
+	var chatBG:FlxSprite;
+	var chatText:FlxText;
+	var chatAlpha:Float;
+	var chatInput:FlxUIInputText;
+	var chatInputFiller:String = "Chat Message...";
+	var chatButton:FlxUIButton;
 
 	public function updateModLogo(){
 		if (members.contains(modLogo))
@@ -246,9 +274,9 @@ class FreeplayState extends MusicBeatState
 		modLogo.scale.set(0.35, 0.35);
 		modLogo.updateHitbox();
 
-		modLogo.x = FlxG.width - modLogo.width;
-		modLogo.y = FlxG.height - modLogo.height;
-
+		modLogo.y = 0;
+		modLogo.screenCenter(X);
+		
 		add(modLogo);
 	}
 
@@ -276,8 +304,39 @@ class FreeplayState extends MusicBeatState
 	var instPlaying:Int = -1;
 	public static var vocals:FlxSound = null;
 	var holdTime:Float = 0;
+	var hasInput:Bool = true;
 	override function update(elapsed:Float)
 	{
+		if (Conductor.ISONLINE)
+		{
+			hasInput = !chatInput.hasFocus;
+
+			if (FlxG.mouse.overlaps(chatBG) || !hasInput){
+				if (chatAlpha < 1) 
+				{
+					chatAlpha = Math.min(chatAlpha, chatAlpha + elapsed);
+				}
+			}
+			else if (chatAlpha > 0) 
+			{
+				chatAlpha = Math.max(chatAlpha, chatAlpha - elapsed);
+			}
+			chatBG.alpha = 0.15 + chatAlpha * 0.35;
+			chatText.y = FlxG.height - 50 - chatText.height;
+			chatText.alpha = 0.25 + chatAlpha * 0.65;
+			chatInput.alpha = 0.5 + chatAlpha * 0.25;
+			chatButton.alpha = 0.5 + chatAlpha * 0.25;
+
+			if (!hasInput){
+				if (chatInput.text == chatInputFiller){
+					chatInput.text = "";
+				}
+			}
+			else if (chatInput.text == ""){
+				chatInput.text = chatInputFiller;
+			}
+		}
+
 		Conductor.songPosition = FlxG.sound.music.time;
 		if (FlxG.sound.music.volume < 0.7)
 		{
@@ -318,11 +377,11 @@ class FreeplayState extends MusicBeatState
 		scoreText.text = 'PERSONAL BEST: ' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
 		positionHighscore();
 
-		var upP = controls.UI_UP_P;
-		var downP = controls.UI_DOWN_P;
-		var accepted = controls.ACCEPT;
-		var space = FlxG.keys.justPressed.SPACE;
-		var ctrl = FlxG.keys.justPressed.CONTROL;
+		var upP = controls.UI_UP_P && hasInput;
+		var downP = controls.UI_DOWN_P && hasInput;
+		var accepted = controls.ACCEPT && hasInput;
+		var space = FlxG.keys.justPressed.SPACE && hasInput;
+		var ctrl = FlxG.keys.justPressed.CONTROL && hasInput;
 
 		var shiftMult:Int = 1;
 		if(FlxG.keys.pressed.SHIFT) shiftMult = 3;
@@ -353,7 +412,7 @@ class FreeplayState extends MusicBeatState
 				}
 			}
 
-			if(FlxG.mouse.wheel != 0 && !curSelectedConfirm)
+			if(FlxG.mouse.wheel != 0 && !curSelectedConfirm && hasInput)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'), 0.2);
 				changeSelection(-shiftMult * FlxG.mouse.wheel, false);
@@ -367,7 +426,7 @@ class FreeplayState extends MusicBeatState
 			changeDiff(1);
 		else if (upP || downP) changeDiff();
 
-		if (controls.BACK)
+		if (controls.BACK && hasInput)
 		{
 			if (curSelectedConfirm){
 				FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -467,7 +526,7 @@ class FreeplayState extends MusicBeatState
 				}
 			}
 		}
-		else if(controls.RESET)
+		else if(controls.RESET && hasInput)
 		{
 			persistentUpdate = false;
 			openSubState(new ResetScoreSubState(songs[curSelected].songName, curDifficulty, songs[curSelected].songCharacter));

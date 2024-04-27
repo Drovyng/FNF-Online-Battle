@@ -160,10 +160,13 @@ class MusicBeatState extends FlxUIState
 			{
 				serverInfo.text = 'Connected | ${OnlineUtil.ISHOST ? "Host" : "Client"} | Ping: ${OnlineUtil.PING}';
 				if (FlxG.state is FreeplayState){
-					serverInfo.x = FlxG.width / 2 - serverInfo.width / 2;
+					serverInfo.x = 10;
+					serverInfo.alignment = LEFT;
+					serverInfo.fieldWidth = 0;
 				}
 				else {
 					serverInfo.x = FlxG.width - serverInfo.width - 10;
+					serverInfo.alignment = CENTER;
 				}
 				serverInfoBG.width = serverInfo.width + 20;
 				serverInfoBG.x = serverInfo.width - 10;
@@ -227,11 +230,17 @@ class MusicBeatState extends FlxUIState
 		if(!FlxTransitionableState.skipNextTransIn) {
 			leState.openSubState(new CustomFadeTransition(0.6, false));
 			CustomFadeTransition.finishCallback = function() {
+				#if (MODS_ALLOWED && !flash && sys)
+				FunkinLua.runtimeShaders = new Map();
+				#end
 				FlxG.switchState(nextState);
 			};
 			return;
 		}
 		FlxTransitionableState.skipNextTransIn = false;
+		#if (MODS_ALLOWED && !flash && sys)
+		FunkinLua.runtimeShaders = new Map();
+		#end
 		FlxG.switchState(nextState);
 	}
 
