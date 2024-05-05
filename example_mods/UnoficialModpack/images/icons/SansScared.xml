@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SansScared.png">
+	<SubTexture name="ICON SANSSCARED0000" x="0" y="0" width="108" height="99" frameX="0" frameY="-32" frameWidth="141" frameHeight="131"/>
+	<SubTexture name="SANSSCARED ICON 0000" x="108" y="0" width="141" height="99" frameX="0" frameY="-32" frameWidth="141" frameHeight="131"/>
+</TextureAtlas>

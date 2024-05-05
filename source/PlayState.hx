@@ -4400,33 +4400,30 @@ class PlayState extends MusicBeatState
 		daNote.tooLate = true;
 		combo = 0;
 		changeHealth(-daNote.missHealth * healthLoss, true, true);
+		songMisses++;
 		
 		if (!Conductor.ISONLINE){
-		
+			vocals.volume = 0;
 			if(instakillOnMiss)
 			{
-				vocals.volume = 0;
 				doDeathCheck(true);
 			}
+		}
 
-			songMisses++;
-			vocals.volume = 0;
-			if(!practiceMode) songScore -= 10;
+		if(!practiceMode || Conductor.ISONLINE) songScore -= 10;
 
-			totalPlayed++;
-			RecalculateRating(true);
+		totalPlayed++;
+		RecalculateRating(true);
 
-			var char:Character = boyfriend;
-			if(daNote.gfNote) {
-				char = gf;
-			}
+		var char:Character = (Conductor.ISONLINE && !Conductor.ISPLAYER) ? dad : boyfriend;
+		if(daNote.gfNote) {
+			char = gf;
+		}
 
-			if(char != null && !daNote.noMissAnimation && char.hasMissAnimations)
-			{
-				var animToPlay:String = singAnimations[Std.int(Math.abs(daNote.noteData))] + 'miss' + daNote.animSuffix;
-				char.playAnim(animToPlay, true);
-			}
-
+		if(char != null && !daNote.noMissAnimation && char.hasMissAnimations)
+		{
+			var animToPlay:String = singAnimations[Std.int(Math.abs(daNote.noteData))] + 'miss' + daNote.animSuffix;
+			char.playAnim(animToPlay, true);
 		}
 
 		callOnLuas('noteMiss', [notes.members.indexOf(daNote), daNote.noteData, daNote.noteType, daNote.isSustainNote]);
@@ -4743,7 +4740,8 @@ class PlayState extends MusicBeatState
 					if(note.isSustainNote && !note.animation.curAnim.name.endsWith('end')) {
 						time += 0.15;
 					}
-					StrumPlayAnim(Conductor.ISPLAYER, Std.int(Math.abs(note.noteData)) % 4, time);
+					
+					StrumPlayAnim(!Conductor.ISPLAYER && !cpuControlled, Std.int(Math.abs(note.noteData)) % 4, time);
 				} else {
 					playerStrums.forEach(function(spr:StrumNote)
 					{

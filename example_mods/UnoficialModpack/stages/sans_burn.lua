@@ -224,6 +224,11 @@ end
 local canAttack = true;
 
 function onUpdate(elapsed)
+
+	if getSongPosition() + 1000 >= songLength then
+		return
+	end
+	
 	setPropertyLuaSprite('hud_attack', "alpha", 1 - battleTrans)
 	setPropertyLuaSprite('hud_dodge', "alpha", 1 - battleTrans - endTweenDodge)
 	
@@ -239,8 +244,8 @@ function onUpdate(elapsed)
 	end
 	if chromVal > 0 then
 		chromVal = math.max(chromVal - elapsed * 0.01, 0)
-		setChrome(chromVal)
 	end
+	setChrome(chromVal)
 	
 	if getHealth() <= 0 and not isOnline then
 		return

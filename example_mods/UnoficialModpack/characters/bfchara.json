@@ -55,6 +55,7 @@
 			"indices": [],
 			"name": "0EERR"
 		},
+		
 		{
 			"offsets": [
 				1117, 
@@ -65,6 +66,51 @@
 			"anim": "attack",
 			"indices": [],
 			"name": "0BF attack copy instance 1"
+		},
+		
+		{
+			"offsets": [
+				-39,
+				107
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "U-Miss"
+		},
+		{
+			"offsets": [
+				2,
+				24
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "R-Miss"
+		},
+		{
+			"offsets": [
+				-10,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "D-Miss"
+		},
+		{
+			"offsets": [
+				40,
+				21
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "L-Miss"
 		}
 	],
 	"no_antialiasing": false,

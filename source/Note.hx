@@ -56,6 +56,7 @@ class Note extends FlxSprite
 	public var earlyHitMult:Float = 0.5;
 	public var lateHitMult:Float = 1;
 	public var lowPriority:Bool = false;
+	public var noteAnimSuffix:String = '';
 
 	public static var swagWidth:Float = 160 * 0.7;
 	public static var PURP_NOTE:Int = 0;
@@ -351,22 +352,22 @@ class Note extends FlxSprite
 	}
 
 	function loadNoteAnims() {
-		animation.addByPrefix('greenScroll', 'green0');
-		animation.addByPrefix('redScroll', 'red0');
-		animation.addByPrefix('blueScroll', 'blue0');
-		animation.addByPrefix('purpleScroll', 'purple0');
+		animation.addByPrefix('greenScroll', 'green${noteAnimSuffix}0');
+		animation.addByPrefix('redScroll', 'red${noteAnimSuffix}0');
+		animation.addByPrefix('blueScroll', 'blue${noteAnimSuffix}0');
+		animation.addByPrefix('purpleScroll', 'purple${noteAnimSuffix}0');
 
 		if (isSustainNote)
 		{
-			animation.addByPrefix('purpleholdend', 'pruple end hold');
-			animation.addByPrefix('greenholdend', 'green hold end');
-			animation.addByPrefix('redholdend', 'red hold end');
-			animation.addByPrefix('blueholdend', 'blue hold end');
+			animation.addByPrefix('purpleholdend', 'pruple end hold${noteAnimSuffix}');
+			animation.addByPrefix('greenholdend', 'green hold end${noteAnimSuffix}');
+			animation.addByPrefix('redholdend', 'red hold end${noteAnimSuffix}');
+			animation.addByPrefix('blueholdend', 'blue hold end${noteAnimSuffix}');
 
-			animation.addByPrefix('purplehold', 'purple hold piece');
-			animation.addByPrefix('greenhold', 'green hold piece');
-			animation.addByPrefix('redhold', 'red hold piece');
-			animation.addByPrefix('bluehold', 'blue hold piece');
+			animation.addByPrefix('purplehold', 'purple hold piece${noteAnimSuffix}');
+			animation.addByPrefix('greenhold', 'green hold piece${noteAnimSuffix}');
+			animation.addByPrefix('redhold', 'red hold piece${noteAnimSuffix}');
+			animation.addByPrefix('bluehold', 'blue hold piece${noteAnimSuffix}');
 		}
 
 		setGraphicSize(Std.int(width * 0.7));

@@ -365,9 +365,17 @@ class Paths
 		var file:String = modsSounds(path, key);
 		if(FileSystem.exists(file)) {
 			
-			if (key.contains("freakyMenu")){
+			if (key.contains("freakyMenu"))
+			{
 				var bpmfile = modFolders(path + "/" + key + ".bpm");
-				if (FileSystem.exists(bpmfile)) Conductor.changeBPM(Std.parseFloat(File.getContent(bpmfile)));
+				
+				if (FileSystem.exists(bpmfile)) 
+				{
+					Conductor.changeBPM(Std.parseFloat(File.getContent(bpmfile)));
+				}
+				else {
+					Conductor.changeBPM(TitleState.titleJSON.bpm);
+				}
 			}
 
 			if(!currentTrackedSounds.exists(file)) {

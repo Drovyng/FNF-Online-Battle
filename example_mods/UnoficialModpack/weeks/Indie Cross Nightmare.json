@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"Bad Time",
+			"SansNM",
+			[
+				125,
+				200,
+				200
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"storyName": "Indie Cross",
+	"weekName": "Indie Cross",
+	"freeplayColor": [
+		150,
+		50,
+		50
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"modPrefix": "indie-cross",
+	"difficulties": "hard,hell"
+}
