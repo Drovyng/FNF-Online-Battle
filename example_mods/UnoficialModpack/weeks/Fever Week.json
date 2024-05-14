@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"Crucify",
+			"taki",
+			[
+				150,
+				50,
+				50
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"storyName": "Fever Week",
+	"weekName": "Fever Week",
+	"freeplayColor": [
+		150,
+		50,
+		50
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"modPrefix": "fever",
+	"difficulties": "reworked"
+}

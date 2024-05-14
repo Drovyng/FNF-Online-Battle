@@ -1,0 +1,165 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-3,
+				92
+			],
+			"fps": 24,
+			"name": "fever fear",
+			"loop": true,
+			"indices": [],
+			"anim": "scared"
+		},
+		{
+			"offsets": [
+				-9,
+				91
+			],
+			"fps": 24,
+			"name": "fever right miss",
+			"loop": false,
+			"indices": [],
+			"anim": "singRIGHTmiss"
+		},
+		{
+			"offsets": [
+				40,
+				15
+			],
+			"fps": 24,
+			"name": "fever down0",
+			"loop": false,
+			"indices": [],
+			"anim": "singDOWN"
+		},
+		{
+			"offsets": [
+				7,
+				93
+			],
+			"fps": 24,
+			"name": "fever idle frown",
+			"loop": false,
+			"indices": [],
+			"anim": "idle-frown"
+		},
+		{
+			"offsets": [
+				40,
+				93
+			],
+			"fps": 24,
+			"name": "fever left miss",
+			"loop": false,
+			"indices": [],
+			"anim": "singLEFTmiss"
+		},
+		{
+			"offsets": [
+				-35,
+				96
+			],
+			"fps": 24,
+			"name": "fever up0",
+			"loop": false,
+			"indices": [],
+			"anim": "singUP"
+		},
+		{
+			"offsets": [
+				0,
+				89
+			],
+			"fps": 24,
+			"name": "fever hey",
+			"loop": false,
+			"indices": [],
+			"anim": "hey"
+		},
+		{
+			"offsets": [
+				7,
+				93
+			],
+			"fps": 24,
+			"name": "fever idle0",
+			"loop": false,
+			"indices": [],
+			"anim": "idle"
+		},
+		{
+			"offsets": [
+				45,
+				14
+			],
+			"fps": 24,
+			"name": "fever down miss",
+			"loop": false,
+			"indices": [],
+			"anim": "singDOWNmiss"
+		},
+		{
+			"offsets": [
+				-6,
+				89
+			],
+			"fps": 24,
+			"name": "fever right0",
+			"loop": false,
+			"indices": [],
+			"anim": "singRIGHT"
+		},
+		{
+			"offsets": [
+				43,
+				95
+			],
+			"fps": 24,
+			"name": "fever left0",
+			"loop": false,
+			"indices": [],
+			"anim": "singLEFT"
+		},
+		{
+			"offsets": [
+				-14,
+				103
+			],
+			"fps": 24,
+			"name": "fever up miss",
+			"loop": false,
+			"indices": [],
+			"anim": "singUPmiss"
+		},
+		{
+			"offsets": [
+				21,
+				92
+			],
+			"fps": 24,
+			"name": "fever dodge",
+			"loop": false,
+			"indices": [],
+			"anim": "dodge"
+		}
+	],
+	"healthicon": "bf-demon",
+	"image": "characters/demon_fever_assets",
+	"healthbar_colors": [
+		153,
+		219,
+		246
+	],
+	"position": [
+		0,
+		0
+	],
+	"flip_x": true,
+	"camera_position": [
+		0,
+		-150
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

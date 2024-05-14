@@ -1,0 +1,72 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"name": "taki idle",
+			"loop": true,
+			"anim": "idle"
+		},
+		{
+			"offsets": [
+				-306,
+				-30
+			],
+			"fps": 24,
+			"name": "taki right",
+			"loop": false,
+			"anim": "singRIGHT"
+		},
+		{
+			"offsets": [
+				82,
+				-113
+			],
+			"fps": 24,
+			"name": "taki down",
+			"loop": false,
+			"anim": "singDOWN"
+		},
+		{
+			"offsets": [
+				-117,
+				79
+			],
+			"fps": 24,
+			"name": "taki up",
+			"loop": false,
+			"anim": "singUP"
+		},
+		{
+			"offsets": [
+				143,
+				-22
+			],
+			"fps": 24,
+			"name": "taki left",
+			"loop": false,
+			"anim": "singLEFT"
+		}
+	],
+	"healthicon": "taki",
+	"image": "characters/taki",
+	"healthbar_colors": [
+		250,
+		100,
+		100
+	],
+	"position": [
+		310,
+		280
+	],
+	"flip_x": false,
+	"camera_position": [
+		320,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

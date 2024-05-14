@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="taki_assets.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="taki down0000" x="0" y="0" width="926" height="1292" pivotX="219.85" pivotY="-102.3" frameX="-26" frameY="0" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0001" x="951" y="0" width="935" height="1292" frameX="-17" frameY="0" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0002" x="1911" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0003" x="2870" y="0" width="925" height="1260" frameX="-9" frameY="-32" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0004" x="3820" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0005" x="3820" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0006" x="4779" y="0" width="925" height="1260" frameX="-9" frameY="-32" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0007" x="5729" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0008" x="3820" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0009" x="6688" y="0" width="925" height="1260" frameX="-9" frameY="-32" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0010" x="3820" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0011" x="3820" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0012" x="6688" y="0" width="925" height="1260" frameX="-9" frameY="-32" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0013" x="3820" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki down0014" x="3820" y="0" width="934" height="1259" frameX="0" frameY="-33" frameWidth="952" frameHeight="1292"/>
+	<SubTexture name="taki idle0000" x="0" y="1317" width="675" height="1394" pivotX="143.55" pivotY="11.05" frameX="-106" frameY="-11" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0001" x="700" y="1317" width="669" height="1394" frameX="-112" frameY="-11" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0002" x="1394" y="1317" width="773" height="1390" frameX="-98" frameY="-15" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0003" x="2192" y="1317" width="780" height="1390" frameX="-91" frameY="-15" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0004" x="1394" y="1317" width="773" height="1390" frameX="-98" frameY="-15" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0005" x="2997" y="1317" width="798" height="1390" frameX="-90" frameY="-15" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0006" x="3820" y="1317" width="804" height="1390" frameX="-84" frameY="-15" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0007" x="4649" y="1317" width="805" height="1381" frameX="-93" frameY="-24" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0008" x="4649" y="1317" width="805" height="1381" frameX="-93" frameY="-24" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0009" x="5479" y="1317" width="738" height="1392" frameX="-98" frameY="-13" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0010" x="6242" y="1317" width="636" height="1392" frameX="-200" frameY="-13" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0011" x="6903" y="1317" width="691" height="1390" frameX="-72" frameY="-15" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0012" x="0" y="2736" width="691" height="1390" frameX="-72" frameY="-15" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0013" x="716" y="2736" width="709" height="1396" frameX="-49" frameY="-9" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0014" x="716" y="2736" width="709" height="1396" frameX="-49" frameY="-9" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0015" x="1450" y="2736" width="732" height="1401" frameX="-21" frameY="-4" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0016" x="2207" y="2736" width="732" height="1401" frameX="-21" frameY="-4" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0017" x="2207" y="2736" width="732" height="1401" frameX="-21" frameY="-4" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0018" x="2964" y="2736" width="743" height="1403" frameX="-9" frameY="-2" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0019" x="3732" y="2736" width="743" height="1403" frameX="-9" frameY="-2" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0020" x="4500" y="2736" width="752" height="1405" frameX="0" frameY="0" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0021" x="5277" y="2736" width="752" height="1405" frameX="0" frameY="0" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0022" x="6054" y="2736" width="729" height="1397" frameX="-24" frameY="-8" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki idle0023" x="6808" y="2736" width="729" height="1397" frameX="-24" frameY="-8" frameWidth="898" frameHeight="1405"/>
+	<SubTexture name="taki left0000" x="0" y="4166" width="1008" height="1389" pivotX="289.45" pivotY="-5.4" frameX="0" frameY="0" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0001" x="1033" y="4166" width="1008" height="1389" frameX="0" frameY="0" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0002" x="2066" y="4166" width="1004" height="1387" frameX="-23" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0003" x="2066" y="4166" width="1004" height="1387" frameX="-23" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0004" x="3095" y="4166" width="979" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0005" x="4099" y="4166" width="977" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0006" x="5101" y="4166" width="969" height="1387" frameX="-58" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0007" x="6095" y="4166" width="971" height="1387" frameX="-58" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0008" x="4099" y="4166" width="977" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0009" x="4099" y="4166" width="977" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0010" x="3095" y="4166" width="979" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0011" x="4099" y="4166" width="977" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0012" x="4099" y="4166" width="977" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0013" x="3095" y="4166" width="979" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki left0014" x="4099" y="4166" width="977" height="1387" frameX="-50" frameY="-2" frameWidth="1029" frameHeight="1389"/>
+	<SubTexture name="taki right0000" x="7091" y="4166" width="700" height="1374" pivotX="-158.95" pivotY="-20.05" frameX="-3" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0001" x="0" y="5580" width="700" height="1374" frameX="-3" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0002" x="725" y="5580" width="666" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0003" x="1416" y="5580" width="666" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0004" x="2107" y="5580" width="651" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0005" x="2107" y="5580" width="651" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0006" x="2783" y="5580" width="648" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0007" x="3456" y="5580" width="648" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0008" x="4129" y="5580" width="657" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0009" x="4811" y="5580" width="657" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0010" x="4129" y="5580" width="657" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0011" x="4129" y="5580" width="657" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0012" x="4811" y="5580" width="657" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0013" x="4129" y="5580" width="657" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki right0014" x="4129" y="5580" width="657" height="1374" frameX="0" frameY="0" frameWidth="703" frameHeight="1374"/>
+	<SubTexture name="taki up0000" x="5493" y="5580" width="854" height="1466" pivotX="27.75" pivotY="107.5" frameX="0" frameY="0" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0001" x="5493" y="5580" width="854" height="1466" frameX="0" frameY="0" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0002" x="6372" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0003" x="6372" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0004" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0005" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0006" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0007" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0008" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0009" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0010" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0011" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0012" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0013" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+	<SubTexture name="taki up0014" x="7269" y="5580" width="872" height="1457" frameX="-9" frameY="-9" frameWidth="881" frameHeight="1466"/>
+</TextureAtlas>

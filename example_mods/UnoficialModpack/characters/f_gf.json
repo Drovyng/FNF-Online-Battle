@@ -1,0 +1,209 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-2,
+				-14
+			],
+			"fps": 24,
+			"name": "GF FEAR",
+			"loop": true,
+			"anim": "scared",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-18
+			],
+			"fps": 24,
+			"name": "GF Down Note",
+			"loop": false,
+			"anim": "singDOWN",
+			"indices": []
+		},
+		{
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			],
+			"offsets": [
+				0,
+				-9
+			],
+			"fps": 24,
+			"name": "GF Dancing Beat",
+			"loop": false,
+			"anim": "danceRight"
+		},
+		{
+			"offsets": [
+				0,
+				16
+			],
+			"fps": 24,
+			"name": "GF Up Note",
+			"loop": false,
+			"anim": "singUP",
+			"indices": []
+		},
+		{
+			"indices": [
+				30,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			],
+			"offsets": [
+				0,
+				-9
+			],
+			"fps": 24,
+			"name": "GF Dancing Beat",
+			"loop": false,
+			"anim": "danceLeft"
+		},
+		{
+			"indices": [
+				0,
+				1,
+				2,
+				3
+			],
+			"offsets": [
+				0,
+				-10
+			],
+			"fps": 24,
+			"name": "GF Dancing Beat Hair blowing",
+			"loop": false,
+			"anim": "hairBlow",
+			"indices": []
+		},
+		{
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			],
+			"offsets": [
+				0,
+				-8
+			],
+			"fps": 24,
+			"name": "GF Dancing Beat Hair Landing",
+			"loop": false,
+			"anim": "hairFall"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"name": "GF Cheer",
+			"loop": false,
+			"anim": "cheer",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-18
+			],
+			"fps": 24,
+			"name": "GF Right Note",
+			"loop": false,
+			"anim": "singRIGHT",
+			"indices": []
+		},
+		{
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			],
+			"offsets": [
+				-2,
+				-24
+			],
+			"fps": 24,
+			"name": "gf sad",
+			"loop": false,
+			"anim": "sad"
+		},
+		{
+			"offsets": [
+				0,
+				-21
+			],
+			"fps": 24,
+			"name": "GF left note",
+			"loop": false,
+			"anim": "singLEFT",
+			"indices": []
+		}
+	],
+	"healthicon": "f-gf",
+	"image": "characters/F_GF_assets",
+	"healthbar_colors": [
+		153,
+		219,
+		246
+	],
+	"position": [
+		0,
+		0
+	],
+	"flip_x": false,
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
